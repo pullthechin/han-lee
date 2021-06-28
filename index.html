@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Han - Portfolio</title>
-    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-32x32.png">
+    <link href="css/reset.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Salsa&display=swap" rel="stylesheet">
-    <link href="css/root.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/root.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/introduction-section.css">
     <link rel="stylesheet" href="css/animation-section.css">
     <link rel="stylesheet" href="css/slide-animation-section.css">
@@ -55,9 +57,9 @@
             <div class="introduction-section-text">
                 <h2>Nice to Meet You!</h2>
                 <p>
-                    안녕하세요 저의 이름은 이한승 입니다.<br>
+                    안녕하세요! 프론트엔드 개발자를 희망하는 이한승입니다.<br>
                     저는 사용자에게 최적의 UX를 제공하는 UI를 개발하는 것을 좋아합니다.<br>
-                    또한 인터랙티브한 웹사이트도 만드는 것을 좋아합니다.
+                    또한 인터랙티브한 웹사이트를 만드는 것도 좋아합니다.
                 </p>
             </div>
             <div class="introduction-section-icon-wrap">
@@ -114,9 +116,9 @@
                     <h4>Motivation</h4>
                     <p>
                         Velog는 개발자들이 글을 쓰고 공유하는 사이트입니다.
-                        Velog에서 구독하고 싶은 사용자의 글을 볼 수 있는 카테고리가 없었습니다.
-                        구독하고 싶은 사용자의 글을 표시만 해줘도 조금이라도 사용자들이 Velog를 사용하는데 도움이 되지 않을까라는 생각을 했습니다.
-                        그 생각을 구현시키기 위해 크롬 확장 프로그램을 이용해 Veloighter라는 프로그램을 만들게 되었습니다.
+                        Velog에서 구독하고 싶은 사용자의 글을 볼 수 있는 카테고리가 따로 없었습니다.
+                        기존 피드에서 구독하고 싶은 사용자의 글을 표시만 해줘도 조금이라도 사용자들이 Velog를 사용하는데 도움이 되지 않을까라는 생각을 했습니다.
+                        그 생각을 구현시키기 위해 크롬 익스텐션 Veloighter를 만들게 되었습니다.
                     </p>
                 </div>
                 <div class="project-section-content4">
@@ -134,8 +136,11 @@
                                         </p>
                                         <p>
                                             React와 TypeScritpt를 사용하여 팝업 파일을 작성하였습니다. 스토리지에 저장 되어있는 사용자 정보와
-                                            팝업 화면에 나오는 정보가 동일하게 나와야 했습니다. 그래서 팝업 파일을 작성시 가장 중요하게 생각했던 부분은
-                                            스토리지에 저장되어 있는 사용자 정보와 팝업 페이지의 클래스의 state에 있는 정보를 동일화 시키는 것이었습니다.
+                                            팝업 화면에 나오는 정보가 동일하게 적용돼야 했습니다. 그래서 팝업 파일을 작성시 가장 중요하게 생각했던 부분은
+                                            스토리지에 저장되어 있는 사용자 정보와 팝업 파일에 작성된 클래스의 state에 있는 정보를 동일화 시키는 것이었습니다.
+                                        </p>
+                                        <p>
+                                            팝업 파일의 코드는 제가 100% 직접 작성하였습니다.
                                         </p>
                                     </div>
                                     <div>
@@ -158,6 +163,9 @@
                                             사용자의 이름을 실시간으로 가져오기 위해 <code>getElementByClassName</code>을 사용하였고, 팔로우한 사용자의 글을 표시해주거나 언팔로우한 사용자의 글의 표시된 부분을 제거하는데
                                             <code>setInterval</code> 메서드를 사용하였습니다.            
                                         </p>
+                                        <p>
+                                            콘텐츠 스크립트 파일의 코드는 제가 100% 직접 작성하였습니다.
+                                        </p>
                                     </div>
                                     <div>
                                         <a href="https://github.com/velolighter/velolighter/blob/master/source/ContentScript/index.ts" target="_blank">전체 코드 보기</a>
@@ -171,8 +179,11 @@
                                 <div class="project-section-content4-subtext">
                                     <div>
                                         <p>
-                                            익스텐션 사용자가 추가한 정보를 storage에 저장되게 하였습니다. storage를 활용하기 위해서는 chrome.storage API를 사용해야 합니다.
+                                            Veloighter 사용자가 추가한 정보를 storage에 저장되게 하였습니다. storage를 활용하기 위해서는 chrome.storage API를 사용해야 합니다.
                                             storage.sync를 사용하여 크롬과 데이터가 자동적으로 동기화가 될 수 있도록 하였습니다.
+                                        </p>
+                                        <p>
+                                            스토리지 파일의 코드는 일부분만 작업하였습니다.
                                         </p>
                                     </div>
                                     <div>
@@ -234,12 +245,11 @@
             <div class="about-section-content">
                 <h2>About Me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque viverra dignissim.
-                    Mauris sodales lacinia augue. Quisque suscipit rhoncus magna sed tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam quis nibh id eros malesuada efficitur. Nullam porttitor sed tortor at ultricies. Vivamus ac purus ligula. Duis ac malesuada velit. Cras eu gravida nulla, eu laoreet sapien.
-                    Nullam aliquet, tellus vitae dapibus ullamcorper, augue sem interdum odio, vel maximus nulla nibh vitae odio.
-                    Duis quis justo et augue dapibus vehicula.
-                    Suspendisse euismod efficitur lacus, ut consectetur urna tristique at.
-                    Nunc et sollicitudin felis. Sed ut turpis sed dolor bibendum vulputate.
+                    안녕하세요! 제 이름은 이한승입니다. 저는 어릴때부터 무언가를 만드는 것을 좋아했습니다.
+                    어릴때는 음악, 그림, 만화등을 만드는 것을 좋아했습니다. 지금은 웹 개발을 통해 웹 서비스를 만드는 것을 좋아합니다.
+                    웹 서비스를 만드는 과정은 지루하고 힘들지만 다 만든 후에는 눈에 보이는 결과물을 작동 시켜보는 일은 저에게 있어서 굉장히 보람찬 일입니다.
+                    또한 만든 결과물이 누군가에 사용되고, 그 결과물이 조금이라도 즐거움, 도움을 제공할 수 있다는것이 웹 개발을 하는 즐거움인것 같습니다.
+                    지금까지 혼자서 만드는 아마추어적인 작품을 만들었지만, 이제는 회사에 들어가 여러 사람과 같이 프로페셔널한 작품을 만드는데 이바지 하고싶습니다.
                 </p>
             </div>
             <div class="about-section-content about-section-content2">
@@ -251,7 +261,10 @@
                             <h3>HTML/CSS</h3>
                         </div>
                         <div class="tech-experience-text">
-                            <p></p>
+                            <p>
+                                사이드 프로젝트와 포트폴리오 사이트를 만드는데 사용해보았습니다.
+                                HTML 구조를 작성할 때 의미적인 부분과 CSS, 애니메이션 처리 부분을 고려하고 작성하였습니다.
+                            </p>
                             <span class="tech-experience-sticker tech-experience-sticker1">많이 써봄</span>
                         </div>
                     </li>
@@ -261,7 +274,10 @@
                             <h3>Javascript</h3>
                         </div>
                         <div class="tech-experience-text">
-                            <p></p>
+                            <p>
+                                사이드 프로젝트와 포트폴리오 사이트를 만드는데 사용해보았습니다.
+                                사이드 프로젝트를 할 때는 같이하는 작업이기 때문에 변수명을 누구나 알기 쉽게 작성하였습니다.
+                            </p>
                             <span class="tech-experience-sticker tech-experience-sticker1">많이 써봄</span>
                         </div>
                     </li>
@@ -271,7 +287,10 @@
                             <h3>React</h3>
                         </div>
                         <div class="tech-experience-text tech-experience-image4">
-                            <p></p>
+                            <p>
+                                사이드 프로젝트를 만드는데 사용해보았습니다.
+                                리액트의 기초적인 내용을 공부하기 위해 크롬 익스텐션의 Momentum 서비스를 리액트로 클론 작업해보았습니다.
+                            </p>
                             <span class="tech-experience-sticker tech-experience-sticker2">적당히 써봄</span>
                         </div>
                     </li>
@@ -281,21 +300,19 @@
                             <h3>TypeScritpt</h3>
                         </div>
                         <div class="tech-experience-text">
-                            <p></p>
+                            <p>
+                                사이드 프로젝트를 만드는데 사용해보았습니다.
+                            </p>
                             <span class="tech-experience-sticker tech-experience-sticker3">조금 써봄</span>
                         </div>
                     </li>
                 </ul>
             </div>
-            <div class="about-section-content about-section-content3">
+            <div class="about-section-content about-section-content4">
                 <h2>About this site</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque viverra dignissim.
-                    Mauris sodales lacinia augue. Quisque suscipit rhoncus magna sed tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam quis nibh id eros malesuada efficitur. Nullam porttitor sed tortor at ultricies. Vivamus ac purus ligula. Duis ac malesuada velit. Cras eu gravida nulla, eu laoreet sapien.
-                    Nullam aliquet, tellus vitae dapibus ullamcorper, augue sem interdum odio, vel maximus nulla nibh vitae odio.
-                    Duis quis justo et augue dapibus vehicula.
-                    Suspendisse euismod efficitur lacus, ut consectetur urna tristique at.
-                    Nunc et sollicitudin felis. Sed ut turpis sed dolor bibendum vulputate.
+                    직접 디자인하고 개발하였습니다. HTML&CSS, Javascript를 사용하였습니다.
+                    디자인은 <a href="https://www.anandupender.com/" target="_blank">Anand Upender</a>의 사이트를 많이 참고하였습니다.
                 </p>
             </div>
         </div>

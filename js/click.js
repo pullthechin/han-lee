@@ -10,6 +10,4 @@
     arrowDownElem.addEventListener('click', function() {
         moveDown();
     });
-
-    console.log(projectSectionElem.getBoundingClientRect().top);
 })();

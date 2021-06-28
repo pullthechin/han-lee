@@ -7,6 +7,9 @@
     transform: translateY(200px);
     transition: all .4s;
 }
+.about-section ul li {
+    align-items: center;
+}
 .about-section-content {
     margin-bottom: var(--content-margin);
 }
@@ -17,13 +20,10 @@
     font-size: var(--head-font-size);
     text-align: center;
     font-weight: 500;
+    margin-bottom: var(--inner-content-margin);
 }
 .about-section-content p {
     font-size: var(--basic-font-size);
-    margin-top: var(--inner-content-margin);
-}
-.about-section-content2 ul {
-    margin-top: var(--inner-content-margin);
 }
 .about-section-content2 ul li {
     display: flex;
@@ -85,4 +85,12 @@
 }
 .tech-experience-sticker3 {
     background: rgba(0, 135, 107, 0.2);
+}
+.about-section-content3 p a {
+    color: var(--link-font-color);
+    text-decoration: none;
+    transition: all .3s;
+}
+.about-section-content3 p a:hover {
+    text-decoration: underline;
 }
