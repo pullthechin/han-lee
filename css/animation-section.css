@@ -1,0 +1,45 @@
+@keyframes animationUp {
+    to {
+        transform: translateY(-100vh);
+    }
+}
+@keyframes animationLeft {
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.animation-section {
+    width: 100vw;
+    height: 100vh;
+    background: var(--point-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animationUp 1s 0.8s forwards;
+}
+.animation-section-text {
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Salsa', cursive;
+}
+.animation-section-text > span:nth-child(1) {
+    position: relative;
+    left: -35px;
+    opacity: 0;
+    animation: animationLeft 0.8s forwards;
+}
+.animation-section-text > span:nth-child(2) {
+    position: relative;
+    left: 35px;
+    opacity: 0;
+    animation: animationLeft 0.8s forwards;
+}

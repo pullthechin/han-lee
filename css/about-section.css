@@ -1,0 +1,88 @@
+.about-section {
+    display: none;
+    width: 100%;
+    max-width: 1000px;    
+    margin: 200px auto 0;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all .4s;
+}
+.about-section-content {
+    margin-bottom: var(--content-margin);
+}
+.about-section-content:last-child {
+    margin-bottom: 0;
+}
+.about-section-content h2 {
+    font-size: var(--head-font-size);
+    text-align: center;
+    font-weight: 500;
+}
+.about-section-content p {
+    font-size: var(--basic-font-size);
+    margin-top: var(--inner-content-margin);
+}
+.about-section-content2 ul {
+    margin-top: var(--inner-content-margin);
+}
+.about-section-content2 ul li {
+    display: flex;
+    margin-bottom: 80px;
+    font-size: var(--small-font-size);
+}
+.about-section-content2 ul li:last-child {
+    margin-bottom: 0;
+}
+.tech-experience-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tech-experience-image > div {
+    background: red;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.tech-experience-image1 > div {
+    background-image: url(../img/img05.jpg);
+    background-size: cover;
+}
+.tech-experience-image2 > div {
+    background-image: url(../img/img06.png);
+    background-size: cover;
+}
+.tech-experience-image3 > div {
+    background-image: url(../img/img07.jpg);
+    background-size: cover;
+}
+.tech-experience-image4 > div {
+    background-image: url(../img/img08.png);
+    background-size: cover;
+}
+.tech-experience-image > h3 {
+    font-weight: 500;
+    font-size: var(--basic-font-size);
+    margin-top: 18px;
+}
+.tech-experience-sticker {
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 8px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: var(--small-font-size);
+}
+.tech-experience-text {
+    margin-left: 50px;
+}
+.tech-experience-sticker1 {
+    background: rgba(255, 0, 26, 0.2);
+}
+.tech-experience-sticker2 {
+    background: rgba(233, 168, 0, 0.2);
+}
+.tech-experience-sticker3 {
+    background: rgba(0, 135, 107, 0.2);
+}

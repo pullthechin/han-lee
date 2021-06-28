@@ -1,0 +1,14 @@
+:root {
+    --main-color: white;
+    --point-color: #e55039;
+    --black-font-color: #222222;
+    --link-font-color: #2d98da;
+    --point-font-family: 'Salsa', cursive;
+    --head-font-size: 2rem;
+    --basic-font-size: 1.4rem;
+    --small-font-size: 1.1rem;
+    --content-margin: 7.5rem;
+    --inner-content-margin: 3rem;
+    --gray-icon-color: rgba(55, 53, 47, 0.4);
+    --gray-border-color: #dfe6e9; 
+}

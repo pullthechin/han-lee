@@ -1,0 +1,31 @@
+/* @keyframes slideAnimation {
+    50% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+} */
+.slide-animation-section {
+    width: 100vw;
+    height: 100vh;
+    background: var(--point-color);
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-animation-section-text {
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Salsa', cursive;
+}
+/* .on-slide-animation {
+    animation: slideAnimation 3s;
+} */

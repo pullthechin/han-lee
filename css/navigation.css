@@ -1,0 +1,67 @@
+@keyframes navigationDown {
+    to {
+        top: 0;
+    }
+}
+.navigation {
+    width: 100vw;
+    position: fixed;
+    top: -149px;
+    left: 0;
+    border-bottom: 1px solid transparent;
+    z-index: 50;
+    background: white;
+    display: flex;
+    transition: all .5s;
+    animation: navigationDown .5s 2s forwards;
+}
+.navigation-wrapper {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px 5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.navigation-logo {
+    font-family: var(--point-font-family);
+    display: flex;
+    flex-direction: column;
+}
+.navigation-logo h1 {
+    font-size: 36px;
+    color: var(--point-color);
+    transition: all .4s;
+}
+.navigation-logo span {
+    transition: all .5s;
+}
+.navigation-logo h1:hover {
+    letter-spacing: .3rem;
+    cursor: pointer;
+}
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+.navigation-menu ul {
+    display: flex;
+}
+.navigation-menu ul h2 {
+    color: var(--black-font-color);
+    font-size: var(--small-font-size);
+    transition: all .4s;
+}
+.navigation-menu ul li {
+    margin-right: 30px;
+}
+.navigation-menu ul li:hover h2 {
+    cursor: pointer;
+    color: var(--point-color);
+    letter-spacing: .3rem;
+}
+.navigation-menu ul li:last-child {
+    margin-right: 0;
+}
