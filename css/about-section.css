@@ -60,6 +60,10 @@
     background-image: url(../img/img08.png);
     background-size: cover;
 }
+.tech-experience-image5 > div {
+    background-image: url(../img/img09.png);
+    background-size: cover;
+}
 .tech-experience-image > h3 {
     font-weight: 500;
     font-size: var(--basic-font-size);
