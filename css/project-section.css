@@ -69,6 +69,11 @@
 .project-section-content1-text a {
     font-size: var(--basic-font-size);
     color: var(--link-font-color);
+    text-decoration: none;
+    transition: all .3s;
+}
+.project-section-content1-text a:hover {
+    text-decoration: underline;
 }
 .project-section-wrapper {
     margin-top: var(--content-margin);

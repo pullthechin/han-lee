@@ -12,6 +12,8 @@
     }
 
     window.addEventListener('scroll', function() {
-        navigationAnimation();
+        if (screen.width < 768) {
+            navigationAnimation();
+        }
     });
 })();

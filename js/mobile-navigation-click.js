@@ -82,7 +82,7 @@
     }
 
     navigationMenuElem.addEventListener('click', function() {
-        if (screen.width <= 768) {
+        if (screen.width < 768) {
             if (open === false) {
                 menuAppear();
             } else {
